@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B201200046_IHalilAcar_ProjeOdevi", "B201200046_IHalilAcar_ProjeOdevi\B201200046_IHalilAcar_ProjeOdevi.csproj", "{9E9A6FD7-DA1F-4CFB-A84B-79F4E0612E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savas.Library", "Savas.Library\Savas.Library.csproj", "{4A5CB79E-9406-4B53-9C43-7830D4A826BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E9A6FD7-DA1F-4CFB-A84B-79F4E0612E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9A6FD7-DA1F-4CFB-A84B-79F4E0612E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9A6FD7-DA1F-4CFB-A84B-79F4E0612E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9A6FD7-DA1F-4CFB-A84B-79F4E0612E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5CB79E-9406-4B53-9C43-7830D4A826BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5CB79E-9406-4B53-9C43-7830D4A826BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5CB79E-9406-4B53-9C43-7830D4A826BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5CB79E-9406-4B53-9C43-7830D4A826BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BF65F68-D623-4E1D-8EF6-619D05627FE6}
+	EndGlobalSection
+EndGlobal
