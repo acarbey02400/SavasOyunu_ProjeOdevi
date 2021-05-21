@@ -14,11 +14,13 @@ namespace B201200046_IHalilAcar_ProjeOdevi
 {
     public partial class Form1 : Form
     {
-        private readonly Oyun _oyun;
+        private Oyun _oyun;
+        
+        private int zorluk { get; set; }
         public Form1()
         {
             InitializeComponent();
-            _oyun = new Oyun(ucaksavarPanel, savasAlaniPanel);
+            _oyun = new Oyun(ucaksavarPanel, savasAlaniPanel,bilgiPanel);
             _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
         }
 
@@ -27,6 +29,13 @@ namespace B201200046_IHalilAcar_ProjeOdevi
             switch (e.KeyCode)
             {
                 case Keys.Enter:
+                    if (!(_oyun.DevamEdiyorMu))
+                    {
+                        Oyun yeniOyun = new Oyun(ucaksavarPanel, savasAlaniPanel, bilgiPanel);
+                        _oyun = yeniOyun;
+                        _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
+                       
+                    }
                     MessageBox.Show("Oyun başladı");
                     _oyun.Baslat();
                     break;
