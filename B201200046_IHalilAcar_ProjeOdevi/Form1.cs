@@ -83,6 +83,16 @@ namespace B201200046_IHalilAcar_ProjeOdevi
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sureLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
    
 }

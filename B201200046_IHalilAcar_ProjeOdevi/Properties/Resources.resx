@@ -118,29 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp-Video-2021-05-22-at-13.25.30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\WhatsApp-Video-2021-05-22-at-13.25.30.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vanilla-1s-281px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Gorseller\Vanilla-1s-281px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ekran Alıntısı" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ekran Alıntısı.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TİME" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Gorseller\TİME.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Yukleniyor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Gorseller\Yukleniyor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Score1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Gorseller\Score.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Score" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Gorseller\Score.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HEALTH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\HEALTH.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vanilla-1s-281px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Gorseller\Vanilla-1s-281px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ekran Alıntısı" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ekran Alıntısı.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24359364107_152b0152ff_k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24359364107_152b0152ff_k.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Vanilla-1.1s-280px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Gorseller\Vanilla-1.1s-280px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yukleniyor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Yukleniyor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TİME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\TİME.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="space" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,10 +154,19 @@
   <data name="Vanilla-1.2s-281px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Gorseller\Vanilla-1.2s-281px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="24359364107_152b0152ff_k" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\24359364107_152b0152ff_k.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Healt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Healt2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp-Video-2021-05-22-at-13.25.30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Gorseller\WhatsApp-Video-2021-05-22-at-13.25.30.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vanilla-1s-281px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Vanilla-1s-281px.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OYUNaBASLA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\OYUNaBASLA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Score" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Score.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Healt3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Gorseller\Healt3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

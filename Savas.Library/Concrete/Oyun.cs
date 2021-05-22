@@ -20,7 +20,7 @@ namespace Savas.Library.Concrete
         private int _level = 1;
         private int _alinacakSkor;
         private bool _oyunDuraklatma = false;
-        private readonly Panel bilgiPaneli;
+        private int _healtScore = 0;
         private readonly Timer _gecenSureTimer = new Timer { Interval = 1000 };
         private readonly Timer _hareketTimer = new Timer { Interval = 70 };
         private readonly Timer _ucakOlusturmaTimer = new Timer { Interval = 2000 };
@@ -131,7 +131,10 @@ namespace Savas.Library.Concrete
                 _savasAlaniPanel.Controls.Remove(ucak);
                 _savasAlaniPanel.Controls.Remove(vuranMermi);
                 Skor = _alinacakSkor;
-                if (Skor % 300 == 0)
+                _healtScore = _healtScore + 1;
+                 healtArttır();
+
+                if (Skor % 400 == 0)
                 {
                     Level = Level + 1;
                     oyunZorlugunuArttir();
@@ -139,6 +142,33 @@ namespace Savas.Library.Concrete
                 puanArttır();
 
             }
+        }
+
+        private void healtArttır()
+        {
+            if (!(_healtScore == 10)) return;
+            Control hearthBox1 = _bilgiPaneli.Controls.Find("hearth5", true).FirstOrDefault();
+            Control hearthBox2 = _bilgiPaneli.Controls.Find("hearth4", true).FirstOrDefault();
+            Control hearthBox3 = _bilgiPaneli.Controls.Find("hearth3", true).FirstOrDefault();
+            Control hearthBox4 = _bilgiPaneli.Controls.Find("hearth2", true).FirstOrDefault();
+            Control hearthBox5 = _bilgiPaneli.Controls.Find("hearth1", true).FirstOrDefault();
+            Control[] hearths = new Control[] { hearthBox1, hearthBox2, hearthBox3, hearthBox4, hearthBox5 };
+
+         
+                for (int i = 4; i >= 0;)
+                {
+                    if (hearths[i].Visible==true)
+                    {
+                        i--;
+                    }
+                    else if(hearths[i].Visible==false)
+                    {
+                        hearths[i].Visible = true;
+                        _healtScore = 0;
+                        break;
+                    }
+                }
+            
         }
 
         private void oyunZorlugunuArttir()
@@ -193,8 +223,47 @@ namespace Savas.Library.Concrete
                 var carptiMi = ucak.HareketEttir(Yon.Asagi);
                 if (!carptiMi) continue;
 
-                Bitir();
+                if (carptiMi)
+                {
+                    healtAzalt();
+                    _ucaklar.Remove(ucak);
+                    _savasAlaniPanel.Controls.Remove(ucak);
+                }
                 break;
+            }
+        }
+
+        private void healtAzalt()
+        {
+            
+            Control hearthBox1 = _bilgiPaneli.Controls.Find("hearth5", true).FirstOrDefault();
+            Control hearthBox2 = _bilgiPaneli.Controls.Find("hearth4", true).FirstOrDefault();
+            Control hearthBox3 = _bilgiPaneli.Controls.Find("hearth3", true).FirstOrDefault();
+            Control hearthBox4 = _bilgiPaneli.Controls.Find("hearth2", true).FirstOrDefault();
+            Control hearthBox5 = _bilgiPaneli.Controls.Find("hearth1", true).FirstOrDefault();
+            Control[] hearths = new Control[] { hearthBox1, hearthBox2 , hearthBox3 , hearthBox4 , hearthBox5 };
+
+            
+
+            for (int i = 0; i < hearths.Length;)
+            {
+                if(hearths[i].Visible==false)
+                {
+                    i++;
+                }
+                else if(hearths[i].Visible==true)
+                {
+                    hearths[i].Visible = false;
+                    break;
+                }
+            }
+            if (hearthBox5.Visible == false)
+            {
+                Bitir();
+                for (int i = 0; i < hearths.Length; i++)
+                {
+                    hearths[i].Visible = true;
+                }
             }
         }
 

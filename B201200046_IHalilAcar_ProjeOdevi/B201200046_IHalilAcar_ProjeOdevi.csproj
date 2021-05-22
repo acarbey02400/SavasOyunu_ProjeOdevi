@@ -124,5 +124,20 @@
   <ItemGroup>
     <None Include="bin\Debug\Gorseller\WhatsApp-Video-2021-05-22-at-13.25.30.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\OYUNaBASLA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\HEALTH.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Healt2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Healt3.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

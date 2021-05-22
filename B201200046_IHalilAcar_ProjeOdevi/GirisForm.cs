@@ -52,6 +52,7 @@ namespace B201200046_IHalilAcar_ProjeOdevi
             {
                 label1.Visible = true;
                 label2.Visible = false;
+                progressBar1.Visible = false;
             }
         }
 
