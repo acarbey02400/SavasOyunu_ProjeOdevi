@@ -20,6 +20,7 @@ namespace B201200046_IHalilAcar_ProjeOdevi
         public Form1()
         {
             InitializeComponent();
+            
             _oyun = new Oyun(ucaksavarPanel, savasAlaniPanel,bilgiPanel);
             _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
         }
@@ -36,8 +37,13 @@ namespace B201200046_IHalilAcar_ProjeOdevi
                         _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
                        
                     }
+                    scoreLabel.Text = "0";
+                    sureLabel.Text = "0:00";
                     MessageBox.Show("Oyun başladı");
                     _oyun.Baslat();
+                    break;
+                case Keys.P:
+                    _oyun.duraklatVeyaDevamEt();
                     break;
                 case Keys.Right:
                     _oyun.UcaksavariHareketEttir(Yon.Saga);
@@ -69,6 +75,11 @@ namespace B201200046_IHalilAcar_ProjeOdevi
         }
 
         private void scoreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void savasAlaniPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

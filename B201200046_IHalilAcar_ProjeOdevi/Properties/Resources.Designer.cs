@@ -73,6 +73,16 @@ namespace B201200046_IHalilAcar_ProjeOdevi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Ekran_Alıntısı {
+            get {
+                object obj = ResourceManager.GetObject("Ekran Alıntısı", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Score {
             get {
                 object obj = ResourceManager.GetObject("Score", resourceCulture);
@@ -116,6 +126,56 @@ namespace B201200046_IHalilAcar_ProjeOdevi.Properties {
         internal static System.Drawing.Bitmap Vanilla_1_1s_280px {
             get {
                 object obj = ResourceManager.GetObject("Vanilla-1.1s-280px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vanilla_1_2s_281px {
+            get {
+                object obj = ResourceManager.GetObject("Vanilla-1.2s-281px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vanilla_1s_281px {
+            get {
+                object obj = ResourceManager.GetObject("Vanilla-1s-281px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vanilla_1s_281px1 {
+            get {
+                object obj = ResourceManager.GetObject("Vanilla-1s-281px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Video_2021_05_22_at_13_25_30 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp-Video-2021-05-22-at-13.25.30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yukleniyor {
+            get {
+                object obj = ResourceManager.GetObject("Yukleniyor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

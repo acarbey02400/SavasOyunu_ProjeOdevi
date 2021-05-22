@@ -51,10 +51,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +108,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24359364107_152b0152ff_k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Vanilla-1s-281px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Vanilla-1.2s-281px.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\Yukleniyor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Gorseller\WhatsApp-Video-2021-05-22-at-13.25.30.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
