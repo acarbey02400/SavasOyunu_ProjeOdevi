@@ -4,9 +4,3 @@ C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\Savas.Library
 C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.dll
 C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.pdb
 C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.csprojAssemblyReference.cache
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\bin\Debug\Savas.Library.dll
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\bin\Debug\Savas.Library.pdb
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.csprojAssemblyReference.cache
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.csproj.CoreCompileInputs.cache
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.dll
-C:\Users\Kullanıcı\source\repos\B201200046_IHalilAcar_ProjeOdevi\ProjeOdevi\Savas.Library\obj\Debug\Savas.Library.pdb

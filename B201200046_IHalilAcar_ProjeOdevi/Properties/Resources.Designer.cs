@@ -193,6 +193,16 @@ namespace B201200046_IHalilAcar_ProjeOdevi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Vanilla_1s_202px {
+            get {
+                object obj = ResourceManager.GetObject("Vanilla-1s-202px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Vanilla_1s_281px {
             get {
                 object obj = ResourceManager.GetObject("Vanilla-1s-281px", resourceCulture);

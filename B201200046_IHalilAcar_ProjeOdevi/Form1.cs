@@ -1,4 +1,18 @@
-﻿using System;
+﻿/****************************************************************************
+** SAKARYA ÜNİVERSİTESİ
+** BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+** BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
+** NESNEYE DAYALI PROGRAMLAMA DERSİ
+** 2020-2021 BAHAR DÖNEMİ
+**
+** ÖDEV NUMARASI..........: 1. ÖDEV
+** ÖĞRENCİ ADI............: İBRAHİM HALİL ACAR
+** ÖĞRENCİ NUMARASI.......: B201200046
+** DERSİN ALINDIĞI GRUP...: 1. ÖĞRETİM A GRUBU
+****************************************************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,13 +30,18 @@ namespace B201200046_IHalilAcar_ProjeOdevi
     {
         private Oyun _oyun;
         
+
         private int zorluk { get; set; }
         public Form1()
         {
             InitializeComponent();
             
+            
             _oyun = new Oyun(ucaksavarPanel, savasAlaniPanel,bilgiPanel);
             _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
+            _oyun.skorListesi();
+            
+            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -30,8 +49,9 @@ namespace B201200046_IHalilAcar_ProjeOdevi
             switch (e.KeyCode)
             {
                 case Keys.Enter:
-                    if (!(_oyun.DevamEdiyorMu))
+                    if (!(_oyun.DevamEdiyorMu))//Burada önceki oyunun bitmiş olması durumunda oyunu yeniden oluşturuyoruz.
                     {
+
                         Oyun yeniOyun = new Oyun(ucaksavarPanel, savasAlaniPanel, bilgiPanel);
                         _oyun = yeniOyun;
                         _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
@@ -54,6 +74,9 @@ namespace B201200046_IHalilAcar_ProjeOdevi
                 case Keys.Space:
                     _oyun.AtesEt();
                     break;
+                case Keys.Escape:
+                    Close();
+                    break;
                 default:
                     break;
             }
@@ -61,7 +84,11 @@ namespace B201200046_IHalilAcar_ProjeOdevi
 
         private void Oyun_GecenSureDegisti(object sender, EventArgs e)
         {
+           
             sureLabel.Text = _oyun.GecenSure.ToString(@"m\:ss");
+            
+                
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -93,6 +120,25 @@ namespace B201200046_IHalilAcar_ProjeOdevi
         {
 
         }
+
+        //Skor listesi için ayrı bir forma yönlendiriyoruz ve oyunu duraklatıyoruz
+        private void label11_MouseClick(object sender, MouseEventArgs e) 
+        {
+            ScoreForm scoreForm = new ScoreForm(_oyun, label1, label2, label3, label4, label5);
+            _oyun.duraklatVeyaDevamEt();
+            scoreForm.ShowDialog();
+        }
+
+        private void label11_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
    
 }

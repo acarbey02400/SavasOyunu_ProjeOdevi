@@ -1,4 +1,17 @@
-﻿using System;
+﻿/****************************************************************************
+** SAKARYA ÜNİVERSİTESİ
+** BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+** BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
+** NESNEYE DAYALI PROGRAMLAMA DERSİ
+** 2020-2021 BAHAR DÖNEMİ
+**
+** ÖDEV NUMARASI..........: 1. ÖDEV
+** ÖĞRENCİ ADI............: İBRAHİM HALİL ACAR
+** ÖĞRENCİ NUMARASI.......: B201200046
+** DERSİN ALINDIĞI GRUP...: 1. ÖĞRETİM A GRUBU
+****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +27,7 @@ namespace Savas.Library.Concrete
     public class Oyun : IOyun
     {
         #region Alanlar
-        
+       
         private bool _oyunuDuraklat = false;
         private int _skor = 0;
         private int _level = 1;
@@ -90,6 +103,7 @@ namespace Savas.Library.Concrete
             _ucakOlusturmaTimer.Tick += UcakOlusturmaTimer_Tick;
             _alinacakSkor = 25;
             Level = 1;
+           
             
         }
 
@@ -134,7 +148,7 @@ namespace Savas.Library.Concrete
                 _healtScore = _healtScore + 1;
                  healtArttır();
 
-                if (Skor % 400 == 0)
+                if (Skor % 400 == 0) //Artan her 400 skorda Level'ın değerini arttırıyoruz.
                 {
                     Level = Level + 1;
                     oyunZorlugunuArttir();
@@ -144,7 +158,7 @@ namespace Savas.Library.Concrete
             }
         }
 
-        private void healtArttır()
+        private void healtArttır() //Her vurulan 10 uçakta yeni bir can ekleniyor.
         {
             if (!(_healtScore == 10)) return;
             Control hearthBox1 = _bilgiPaneli.Controls.Find("hearth5", true).FirstOrDefault();
@@ -171,7 +185,7 @@ namespace Savas.Library.Concrete
             
         }
 
-        private void oyunZorlugunuArttir()
+        private void oyunZorlugunuArttir() //Her levelda oyunun zorluğu artıyor
         {
             switch (_level) {
                 case 2:
@@ -233,7 +247,7 @@ namespace Savas.Library.Concrete
             }
         }
 
-        private void healtAzalt()
+        private void healtAzalt() //Uçak her yere değdiğinde 1 can azaltılıyor
         {
             
             Control hearthBox1 = _bilgiPaneli.Controls.Find("hearth5", true).FirstOrDefault();
@@ -330,9 +344,11 @@ namespace Savas.Library.Concrete
                 ZamanlayicilariDurdur();
                 skorListesi();
                 oyunuTemizle();
+                
+                
 
             }
-            private void  oyunuTemizle()
+            private void  oyunuTemizle()//Oyun bittiğinde savaş alanındaki cisimler siliniyor.
              {
             for (var i = _ucaklar.Count - 1; i >= 0; i--)
             {
@@ -375,7 +391,7 @@ namespace Savas.Library.Concrete
             }
 
 
-            private void skorListesi()
+            public void skorListesi()//Skor listesi oluşturulup/güncellenip depolanıyor.
             {
             string skorLogText = "score.txt";
             if (!File.Exists(skorLogText))
@@ -405,6 +421,7 @@ namespace Savas.Library.Concrete
                     yeniSkorList[0] = Skor;
 
                     yeniSkorList.Sort();
+                    
 
                     String lastScores = yeniSkorList[4].ToString() + "\n" +
                                     yeniSkorList[3].ToString() + "\n" +
@@ -418,16 +435,30 @@ namespace Savas.Library.Concrete
                     break;
                 }
             }
+            var scoreList = _bilgiPaneli.Controls.Find("scoreList", true).FirstOrDefault();
+            var label1 = scoreList.Controls.Find("label1", true).FirstOrDefault();
+            var label2 = scoreList.Controls.Find("label2", true).FirstOrDefault();
+            var label3 = scoreList.Controls.Find("label3", true).FirstOrDefault();
+            var label4 = scoreList.Controls.Find("label4", true).FirstOrDefault();
+            var label5 = scoreList.Controls.Find("label5", true).FirstOrDefault();
+            Control[] scoreGroup = new Control[] {label1,label2,label3,label4,label5 };
+            int j = 4;
+            for (int i = 0; i < scoreGroup.Length; i++)
+            {
+                scoreGroup[i].Text = yeniSkorList[j].ToString();
+                j = j - 1;
 
-            MessageBox.Show(yeniSkorList[4].ToString() + "\n" +
-                  yeniSkorList[3].ToString() + "\n" +
-                  yeniSkorList[2].ToString() + "\n" +
-                  yeniSkorList[1].ToString() + "\n" +
-                  yeniSkorList[0].ToString() + "\n",
-                  "Puan Sıralaması");
+            }
+
+            /* MessageBox.Show(yeniSkorList[4].ToString() + "\n" +
+                   yeniSkorList[3].ToString() + "\n" +
+                   yeniSkorList[2].ToString() + "\n" +
+                   yeniSkorList[1].ToString() + "\n" +
+                   yeniSkorList[0].ToString() + "\n",
+                   "Puan Sıralaması");*/
         }
-            #endregion
-        
+        #endregion
+
     }
 }
 
